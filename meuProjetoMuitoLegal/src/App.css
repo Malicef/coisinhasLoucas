@@ -1,0 +1,5 @@
+/* Adicionar Tailwind base, components e utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
