@@ -1,5 +1,68 @@
-/* Adicionar Tailwind base, components e utilities */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Estilos gerais */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Garante que a altura seja 100% da tela */
+  width: 100%; /* Garante que a largura seja 100% da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+}
 
+.heading {
+  font-size: 3rem;
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Estilos para os botões */
+.btn {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #e20a00; /* Vermelho Flamengo */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #a10000;
+}
+
+.btn-secondary {
+  background-color: #000000; /* Preto Flamengo */
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #d0d0d0;
+}
+
+/* Estilos para o iframe */
+iframe {
+  border: none;
+  width: 100vw; /* A largura é a da tela inteira */
+  height: 100vh; /* A altura é a da tela inteira */
+  object-fit: cover; /* Faz o vídeo preencher a tela sem distorcer */
+}
